@@ -1,3 +1,4 @@
+RU
 module.exports = {
   'env': {
     'commonjs': true,
