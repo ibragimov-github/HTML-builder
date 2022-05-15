@@ -11,7 +11,6 @@ const copyDir = async function(input, output) {
         fsPromises.copyFile(path.join(input, i.name), path.join(output,i.name))
       }
       else {
-        console.log(path.join(input, `/${i.name}`));
         copyDir(path.join(input, `/${i.name}`), path.join(output, `/${i.name}`));
       }
     }
